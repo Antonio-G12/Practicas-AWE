@@ -1,2 +1,12 @@
 # Practicas-AWE
-Prueba
+Repositorio con las memorias de las practicas del módulo de Aplicaciones Web
+
+**Alumno/a** Antonio Velasco
+**Curso** 2º SMX
+
+## Índice de prácticas
+
+| Nº | Práctica                                  | Memoria
+|
+|----|-------------------------------------------|------------------------------------------------------------------------------|
+| 1  | Introducción a HTML básico  |  [Ver memória](./practica-01-html-basico/memoria.md |
