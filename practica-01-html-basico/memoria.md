@@ -15,7 +15,7 @@ ejemplo
 3. Tercer paso
 
 [Texto del enlace](https://www.direccion-del-enlace.com)
-[Memoria de la práctica 1](./practica-01-html-basico/memoria-md)
+[Memoria de la práctica 1](practica-01-html-basico/memoria.md)
 ¡[Texto alternativo](https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.flaticon.es%2Ficono-gratis%2Fhtml_121537&ved=0CBYQjRxqFwoTCJjmpqmQhJcDFQAAAAAdAAAAABBS&opi=89978449)
 ¡[Captura del resultado final](./imagenes/resultado.png)
 
