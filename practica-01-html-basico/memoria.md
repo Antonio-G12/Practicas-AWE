@@ -24,7 +24,7 @@ Para centrar un elemento se usa la propuedad `text-align`
 ```html
 
 <h1>Hola mundo</h1>
-
+```
 > Esto es una cita o una nota destacada
 
 | Práctica   | Fecha      | Estado        |
