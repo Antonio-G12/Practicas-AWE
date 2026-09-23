@@ -6,7 +6,6 @@ Repositorio con las memorias de las practicas del módulo de Aplicaciones Web
 
 ## Índice de prácticas
 
-| Nº | Práctica                                  | Memoria
-|
-|----|-------------------------------------------|------------------------------------------------------------------------------|
-| 1  | Introducción a HTML básico  |  [Ver memória](./practica01-html-basico/memoria.md) |
+| Nº | Práctica                                  | Memoria|
+|----|-------------------------------------------|-------------------------------------------------------------------|
+| 1  | Introducción a Markdown  |  [Ver memória](./practica01-html-basico/memoria.md) |
