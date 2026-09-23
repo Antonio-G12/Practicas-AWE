@@ -8,4 +8,4 @@ Repositorio con las memorias de las practicas del módulo de Aplicaciones Web
 
 | Nº | Práctica                                  | Memoria|
 |----|-------------------------------------------|-------------------------------------------------------------------|
-| 1  | Introducción a Markdown  |  [Ver memória](./practica01-html-basico/memoria.md) |
+| 1  | Introducción a Markdown  |  [Ver memória](practica-01-html-basico/memoria.md) |
