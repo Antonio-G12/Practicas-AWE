@@ -9,4 +9,4 @@ Repositorio con las memorias de las practicas del módulo de Aplicaciones Web
 | Nº | Práctica                                  | Memoria|
 |----|-------------------------------------------|-------------------------------------------------------------------|
 | 1  | Introducción a Markdown  |  [Ver memória](practica-01-html-basico/memoria.md) |
-| 2  | Instalación de Apache    |  [Ver memória] (practica02-apache/memoria.md)      |
+| 2  | Instalación de Apache    |  [Ver memória](practica02-apache/memoria.md)      |
