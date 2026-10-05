@@ -33,3 +33,7 @@ Para centrar un elemento se usa la propuedad `text-align`
 | Práctica 2 | 17/09/2026 | En progreso   |
 
 ---
+```bash
+echo "Hola, mundo"
+sudo apt update
+```
