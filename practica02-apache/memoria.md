@@ -41,3 +41,18 @@ Comprobaremos que el servicio se encuentre activo.
 curl -I http://localhost
 ```
  y desde un navegador (introduciendo htpp://IP del servidor). Al entrar desde un navegador saldrá esto: <img width="890" height="916" alt="image" src="https://github.com/user-attachments/assets/2ef7a1a1-29df-4d2d-9b6a-2ed366200089" />
+3. Comprobaremos si el firewall está activo con estos comandos:
+```bash
+sudo ufw status
+sudo ufw allow 'Apache'
+```
+4. (Pregunta 2): La diferencia radica en los puertos que abren y su uso para webs (si quieres que transmita un trafico no cifrado, cifrado o ambos) 
+
+**Apartado 4**
+
+1. Ahora se hará una prueba sobre los comandos de administración de Apache
+| Comando                      | Función                                                      |
+|------------------------------|--------------------------------------------|
+| sudo systemctl start apache2 |                                            |
+| sudo systemctl stop apache2  |                                            |
+|                              |                                            |
