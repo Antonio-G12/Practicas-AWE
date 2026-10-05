@@ -6,7 +6,11 @@
  sudo apt update
  sudo apt update -y
 ```
-4. Después se comprobará la versión del sistema con (```bash) lsb_relase -a <img width="351" height="104" alt="image" src="https://github.com/user-attachments/assets/8d32338d-1d1d-42d9-8e55-201ffe5bc033" />
+3. Después se comprobará la versión del sistema con:
+ ```bash
+ lsb_relase -a
+```
+<img width="351" height="104" alt="image" src="https://github.com/user-attachments/assets/8d32338d-1d1d-42d9-8e55-201ffe5bc033" />
 
 **Apartado 2**
 
