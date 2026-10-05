@@ -14,7 +14,14 @@
 
 **Apartado 2**
 
-1. Ahora procederemos con la instalación de Apache. Para ello se tiene que usar el siguiente comando: (```bash) sudo apt install apache2 -y y para comprobar la versión instalada se usará (```bash) apache2 -v
+1. Ahora procederemos con la instalación de Apache. Para ello se tiene que usar el siguiente comando:
+ ```bash
+sudo apt install apache2 -y
+```
+Y para comprobar la versión instalada se usará
+```bash
+ apache2 -v
+```
 2. (Pregunta 1): Son: apache2-bin, apache2-data, apache2-utils, varías librerias (como libapr1 y demás) y dependencias de sistema y red como ssl-cert, iana-etc y netbase
 
 **Apartado 3**
