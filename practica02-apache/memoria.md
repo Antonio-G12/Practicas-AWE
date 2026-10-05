@@ -51,6 +51,7 @@ sudo ufw allow 'Apache'
 **Apartado 4**
 
 1. Ahora se hará una prueba sobre los comandos de administración de Apache
+
 | Comando                      | Función                                    |
 |------------------------------|--------------------------------------------|
 | sudo systemctl start apache2 |                                            |
