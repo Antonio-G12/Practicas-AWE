@@ -32,6 +32,7 @@ Y para comprobar la versión instalada se usará
  sudo systemctl status apache2
 ```
 Comprobaremos que el servicio se encuentre activo.
+
 2. Luego con 
 ```bash
  sudo ss -tulpn | grep apache 2
