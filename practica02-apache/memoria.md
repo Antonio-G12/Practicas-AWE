@@ -27,6 +27,7 @@ Y para comprobar la versión instalada se usará
 **Apartado 3**
 
 1. Ahora mediante el comando
+
  ```bash
  sudo systemctl status apache2
 ```
@@ -36,6 +37,7 @@ Comprobaremos que el servicio se encuentre activo.
  sudo ss -tulpn | grep apache 2
 ```
  se comprobaran los puertos que esten en escucha
+ 
 3. Y por último probamos desde la terminal con 
 ```bash 
 curl -I http://localhost
