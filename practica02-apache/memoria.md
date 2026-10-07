@@ -68,4 +68,5 @@ sudo ufw allow 'Apache'
 | apache2ctl -M                  | Muestra los modulos cargados               |
 | a2enmod / a2dismod             | Activa o desactiva módulos                 |
 | a2ensite / a2dissite           | Activa o desactiva sitios                  |
+| a2enconf / a2disconf           | Activa o desactiva configuraciones         |
 
