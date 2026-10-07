@@ -74,3 +74,11 @@ sudo ufw allow 'Apache'
 
 **Apartado 5**
 
+Analizamos la estructura de los archivos de Apache con:
+```bash
+ls -l /etc/apache2
+```
+<img width="471" height="190" alt="imatge" src="https://github.com/user-attachments/assets/d253e05c-83af-4a7f-9636-b2822c7434b4" />
+
+
+
