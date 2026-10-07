@@ -104,4 +104,22 @@ ls -l /etc/apache2/sites-enabled/
 
 **Apartado 6** 
 
-1. 
+1. Antes de modificar archivos hacemos una copia de seguridad del fichero de configuracion con este comando:
+
+```bash
+sudo cp /etc/apache2/apache2.conf /etc/apache2/apache2.conf.bak
+```
+
+2. Procedemos a cambiar la pagina de inicio con el siguiente comando:
+
+```bash
+echo "<h1>Servidor de Nombre</h1>" | sudo tee /var/www/html/index.html
+```
+
+3. Después cambiamos los puertos de escucha modificando los 2 archivos con nano:
+
+```bash
+sudo nano /etc/apache2/ports.conf
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
+
