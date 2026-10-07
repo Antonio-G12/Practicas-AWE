@@ -55,8 +55,17 @@ sudo ufw allow 'Apache'
 
 1. Ahora se hará una prueba sobre los comandos de administración de Apache
 
-| Comando                      | Función                                    |
-|------------------------------|--------------------------------------------|
-| sudo systemctl start apache2 |                                            |
-| sudo systemctl stop apache2  |                                            |
-|                              |                                            |
+| Comando                        | Función                                    |
+|--------------------------------|--------------------------------------------|
+| sudo systemctl start apache2   | Inicia el servicio                         |
+| sudo systemctl stop apache2    | Detiene el servicio                        |
+| sudo systemctl restart apache2 | Reinicia el servicio                       |
+| sudo systemctl reload apache2  | Recarga sin cortar la conexión             |
+| sudo systemctl enable apache2  | Activa el arranque automatico de Apache    |
+| sudo systemctl disable apache2 | Desactiva el arranque automatico           |
+| apache2ctl configtest          | Comprueba la sintaxis                      |
+| apache2ctl -S                  | Muestra los host cargados                  |
+| apache2ctl -M                  | Muestra los modulos cargados               |
+| a2enmod / a2dismod             | Activa o desactiva módulos                 |
+| a2ensite / a2dissite           | Activa o desactiva sitios                  |
+
