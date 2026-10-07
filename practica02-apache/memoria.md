@@ -74,11 +74,34 @@ sudo ufw allow 'Apache'
 
 **Apartado 5**
 
-Analizamos la estructura de los archivos de Apache con:
+1. Analizamos la estructura de los archivos de Apache con:
 ```bash
 ls -l /etc/apache2
 ```
 <img width="471" height="190" alt="imatge" src="https://github.com/user-attachments/assets/d253e05c-83af-4a7f-9636-b2822c7434b4" />
 
+2. Luego observaremos las rutas de la tabla para saber que contienen
 
+| Ruta                                         | Descripción                                         |
+|----------------------------------------------|-----------------------------------------------------|
+| /etc/apache2/apache2.conf                    | Contiene la configuración principal de Apache       |
+| /etc/apache2/ports.conf                      | Indica los puertos por los que escucha              |
+| /etc/apache2/sites-available/                | Enlace simbolico a los sitios disponibles definidos |
+| /etc/apache2/sites-enabled/                  | Enlace a los sitios activos (desde sites-avaliable) |
+| /etc/apache2/mods-available/ y mods-enabled/ | Enlaces a los modulos disponibles y activos         |
+| /etc/apache2/conf-available/ y conf-enabled/ | Enlaces a las configuraciones disponibles y activas |
+| /etc/apache2/envvars                         | Muestra las variables de entorno                    |
+| /var/www/html/                               | Directorio raiz establecido por defecto             |
+| /var/log/apache2/access.log                  | Muestra el registro de accesos                      |
+| /var/log/apache2/error.log                   | Muestra el registro de errores                      |
 
+3. Por último comprobamos que los ficheros de sites-enabled sean enlaces simbolicos con:
+```bash
+ls -l /etc/apache2/sites-enabled/
+```
+
+4. (Pregunta 4): Porque facilita la gestión y la alta disponibilidad de los sitos web
+
+**Apartado 6** 
+
+1. 
