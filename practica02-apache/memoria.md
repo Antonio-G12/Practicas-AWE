@@ -70,3 +70,7 @@ sudo ufw allow 'Apache'
 | a2ensite / a2dissite           | Activa o desactiva sitios                  |
 | a2enconf / a2disconf           | Activa o desactiva configuraciones         |
 
+1. (Pregunta 3):Cuando no sea necesario reiniciar sin cortar conexiones
+
+**Apartado 5**
+
