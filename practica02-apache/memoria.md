@@ -123,3 +123,11 @@ sudo nano /etc/apache2/ports.conf
 sudo nano /etc/apache2/sites-available/000-default.conf
 ```
 
+4. Tras cambiar los puertos de escucha introduciremos los siguientes comandos para verificar los cambios (luego en los anteriores archivos volveremos a dejar los puertos de escucha como estaban por defecto):
+
+```bash
+sudo apache2ctl configtest
+sudo systemctl reload apache2
+curl -I http://localhost:8080
+```
+
