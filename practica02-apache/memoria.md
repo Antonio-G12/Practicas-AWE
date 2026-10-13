@@ -131,3 +131,9 @@ sudo systemctl reload apache2
 curl -I http://localhost:8080
 ```
 
+5. Definimos el nombre del servidor con:
+```bash
+echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/servername.conf
+sudo a2enconf servername
+sudo systemctl reload apache2
+```
