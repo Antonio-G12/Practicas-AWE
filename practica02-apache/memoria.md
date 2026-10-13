@@ -137,3 +137,12 @@ echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/servername.co
 sudo a2enconf servername
 sudo systemctl reload apache2
 ```
+6. Y después de usar los comandos, personalizaremos la pagina de error y cambiaremos el correo de administrador modificando un archivo (en mi caso, sitio1.conf)
+
+<img width="918" height="518" alt="image" src="https://github.com/user-attachments/assets/7e70d89d-4523-4eef-b968-a18becdb35f9" />
+
+
+
+**Apartado 7**
+
+1. 
