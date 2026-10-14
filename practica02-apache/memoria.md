@@ -224,7 +224,10 @@ apache2ctl -S
 curl http://sitio1.local
 curl http://sitio2.local
 ```
+<img width="748" height="386" alt="imatge" src="https://github.com/user-attachments/assets/08e76a73-6e5f-4e59-9cc3-df79f8cbceec" />
 
+6. (Pregunta 6): En que las que se basan en IP solo se aplica una IP única para cada sitio mientras que las de nombre solo basta una IP (ya que se asigna a múltiples sitios web). La de nombre
 
+**Apartado 9**
 
 
