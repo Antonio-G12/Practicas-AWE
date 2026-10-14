@@ -238,7 +238,9 @@ ls -ld /var/www/sitio1 /var/www/sitio1/index.html
 ```
 
 2. Aplicamos permisios:
+
 #En el primer chmod, el 755 se usa para dar permisos competos al usuario principal y de lectura y ejecucción al resto, el 644 después es para dar permisos de lectura y escritura para el usuario, y de lectura para el resto
+
 #No ponemos 777 para evitar dar permisos a todos los del sistema (de la misma manera de que no puede pertenecer a root), para así evitar fallos críticos
 
 ```bash
