@@ -145,4 +145,86 @@ sudo systemctl reload apache2
 
 **Apartado 7**
 
-1. 
+1. Observamos los modulos que se cargan según la necesidad con lo siguiente:
+```bash
+apache2ctl -M
+ls /etc/apache2/mods-available/
+```
+2. Activamos y comprobamos los módulos habituales con:
+
+```bash
+sudo a2enmod rewrite
+sudo a2enmod headers
+sudo a2enmod ssl
+sudo systemctl restart apache2
+apache2ctl -M | grep -E "rewrite|headers|ssl"
+```
+3. Analizamos los siguientes módulos:
+
+| Módulo                                       | Función                                             |
+|----------------------------------------------|-----------------------------------------------------|
+| mod_rewrite                                  | Reescribe la URL                                    |
+| mod_headers                                  | Manipula las cabezeras HTTP                         |
+| mod_ssl                                      | Activa el soporte a HTTPS                           |
+| mod_dir                                      | Gestiona los ficheros índice                        |
+| mod_alias                                    | Alias de rutas                                      |
+| mod_auth_basic                               | Activa la auteniticación                            |
+| mod_status                                   | Muestra el estado del servidor                      |
+| mod_php / PHP-FPM                            | Ejecuta PHP                                         |
+
+4. Desactivamos un módulo (status en este caso) para ver que ocurre:
+
+```bash
+sudo a2dismod status
+sudo systemctl restart apache2
+```
+5. (Pregunta 5): Fallará el inicio o reinicio del servidor
+
+
+**Apartado 8**
+
+1. Se va a proceder a crear dos sitios (sitio1.local y sitio2.local). Primero se crearán los directorios y las páginas
+```bash
+sudo mkdir -p /var/www/sitio1 /var/www/sitio2
+echo "<h1>Bienvenido a SITIO 1</h1>" | sudo tee /var/www/sitio1/index.html
+echo "<h1>Bienvenido a SITIO 2</h1>" | sudo tee /var/www/sitio2/index.html
+```
+2. Creamos los ficheros de configuración para sitio1 y sitio2 (para sitio2 se usan los mismos comandos que para sitio1)
+```bash
+sudo nano /etc/apache2/sites-available/sitio1.conf
+<VirtualHost *:80>
+    ServerName sitio1.local
+    ServerAdmin admin@sitio1.local
+    DocumentRoot /var/www/sitio1
+
+    <Directory /var/www/sitio1>
+        Options -Indexes +FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/sitio1_error.log
+    CustomLog ${APACHE_LOG_DIR}/sitio1_access.log combined
+</VirtualHost>
+```
+3. Activamos el sitio por defecto para activar los creados
+```bash
+sudo a2ensite sitio1.conf sitio2.conf
+sudo a2dissite 000-default.conf
+sudo apache2ctl configtest
+sudo systemctl reload apache2
+apache2ctl -S
+```
+4. Modificamos /etc/hosts añadiendo lo siguiente
+```bash
+127.0.0.1   sitio1.local sitio2.local
+```
+5. Comprobamos que se ha aplicado correctamente
+```bash
+curl http://sitio1.local
+curl http://sitio2.local
+```
+
+
+
+
