@@ -246,6 +246,11 @@ sudo chown -R www-data:www-data /var/www/sitio1
 sudo find /var/www/sitio1 -type d -exec chmod 755 {} \;
 sudo find /var/www/sitio1 -type f -exec chmod 644 {} \;
 ```
+#Ahora hay que cambiar los permisos con sudo chmod 000 /var/www/sitio1/index.html (luego restaurar con 644 los permisos) para causar el error 403. Luego hay que entrar en el log de sitio1 para comprobar que el error se ha registrado.
+
+<img width="955" height="903" alt="image" src="https://github.com/user-attachments/assets/c58d292c-510f-4edd-a742-3e61e7aa0a07" />
+
+<img width="1277" height="97" alt="image" src="https://github.com/user-attachments/assets/0e9c85f6-c215-4ba0-aef2-811fcc586c5d" />
 
 
 
