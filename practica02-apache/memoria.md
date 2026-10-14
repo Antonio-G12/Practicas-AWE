@@ -230,4 +230,22 @@ curl http://sitio2.local
 
 **Apartado 9**
 
+1. Comprobamos que Apache se ejecuta con el usuario www-data con lo siguiente:
+```bash
+ps aux | grep apache2
+grep -E "APACHE_RUN_(USER|GROUP)" /etc/apache2/envvars
+ls -ld /var/www/sitio1 /var/www/sitio1/index.html
+```
+
+2. Aplicamos permisios:
+#En el primer chmod, el 755 se usa para dar permisos competos al usuario principal y de lectura y ejecucción al resto, el 644 después es para dar permisos de lectura y escritura para el usuario, y de lectura para el resto
+#No ponemos 777 para evitar dar permisos a todos los del sistema (de la misma manera de que no puede pertenecer a root), para así evitar fallos críticos
+
+```bash
+sudo chown -R www-data:www-data /var/www/sitio1
+sudo find /var/www/sitio1 -type d -exec chmod 755 {} \;
+sudo find /var/www/sitio1 -type f -exec chmod 644 {} \;
+```
+
+
 
