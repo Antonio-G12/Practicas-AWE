@@ -1,4 +1,8 @@
 # Instalación de MariaDB
+### Nombre: Antonio Velasco
+### Curso: 2SMX
+### Fecha: 21/10/2026
+
 **Apartado 1**
 1. Hay que deshabilitar los sitios virtuales realizados en la practica 2 con:
 ```bash
