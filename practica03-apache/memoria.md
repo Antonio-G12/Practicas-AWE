@@ -38,6 +38,7 @@ sudo mariadb
 **Apartado 4**
 
 | Comando                             | Funcion                                               |
+|-------------------------------------|-------------------------------------------------------|
 | sudo systemctl start mariadb        | Arranca el servicio                                   |
 | sudo systemctl stop mariadb         | Detiene el servicio                                   | 
 | sudo systemctl restart mariadb      | Reinicia MariaDB                                      |
