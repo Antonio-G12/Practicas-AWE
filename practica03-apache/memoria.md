@@ -12,6 +12,7 @@ sudo apt upgrade -y
 systemctl is-active apache2
 ```
 <img width="462" height="33" alt="imatge" src="https://github.com/user-attachments/assets/da943b8a-68bf-46a3-a39a-58ed53281fe2" />
+
 **Apartado 2**
 1. Instalamos MariaDB y comprobamos la version en la cual esta:
 ```bash
