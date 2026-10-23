@@ -53,4 +53,22 @@ ls /etc/apache2/sites-enabled/
 grep DocumentRoot /etc/apache2/sites-enabled/000-default.conf
 ```
 
+3. Entramos en la pagina web desde el sistema (debe de aparecer la pagina por defecto, apareciendo o "Apache2 Ubuntu Default Page" o "Servidor de NOMBRE" (en este caso es el segundo por haber modificado el archivo sitio1.local en practicas anteriores. Ahora no es necesario este archivo)
+
+```bash
+http://IP Servidor
+```
+
+
+<img width="700" height="64" alt="imatge" src="https://github.com/user-attachments/assets/7eba6e1e-9462-485b-b66f-44e4a971a7d7" />
+
+
+<img width="954" height="968" alt="imatge" src="https://github.com/user-attachments/assets/6fb886e9-5e31-485d-8d14-29e2ce08da77" />
+
+
+4.(Pregunta 2): En que a2dissite lo desactiva, pero el fichero permanece. Por el 000-default.conf
+
+**Apartado 3**
+
+
 
