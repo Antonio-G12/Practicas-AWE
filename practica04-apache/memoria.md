@@ -1,7 +1,7 @@
 # Instalación de Apache
-## Nombre: Antonio Velasco
-## Curso: 2SMX
-## Fecha: 23/10/26
+### Nombre: Antonio Velasco
+### Curso: 2SMX
+### Fecha: 23/10/26
 
 **Apartado 1**
 
