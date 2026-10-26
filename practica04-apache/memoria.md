@@ -120,7 +120,7 @@ rm -r /tmp/wordpress /tmp/latest.tar.gz
 ls /var/www/html
 ```
 
-3. (Pregunta 4): Los primeros comandos sirven para, en el caso del primero de estos, instalar wget (ya instalado en mi caso), el siguiente para moverse a /tmp, el otro para conseguir el archivo comprimido de la pagina de WordPress y los ultimos de estos para descomprimir y ver el contenido de la carpeta. Los siguientes tanto para borrar como para mcopiar
+3. (Pregunta 4): Los primeros comandos sirven para, en el caso del primero de estos, instalar wget (ya instalado en mi caso), el siguiente para moverse a /tmp, el otro para conseguir el archivo comprimido de la pagina de WordPress y los ultimos de estos para descomprimir y ver el contenido de la carpeta. Los siguientes tanto para borrar como para copiar
 
 4. Le damos los siguientes permisos
 
@@ -133,4 +133,6 @@ ls -ld /var/www/html
 
 <img width="669" height="404" alt="image" src="https://github.com/user-attachments/assets/cc2c0383-56e0-4085-b014-207993cf21c3" />
 
-5. (Pregunta 5): 
+5. (Pregunta 5): Estos comandos lo que hacen es dar permisos (en el caso del chown -R, el find lo hace igual solo que busca en el directorio los archivos concretos para darle permiso (el -exec es para ejecutar el comando sin confirmacion). Porque WordPress no podrá ni crear ni modificar archivos, únicamente podrá leerlos. Puede fallar las actualizaciones y causar errores al subir archivos
+
+**Apartado 5**
