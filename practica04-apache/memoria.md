@@ -70,5 +70,33 @@ http://IP Servidor
 
 **Apartado 3**
 
+1. Crearemos la base de datos de Wordpress y la guardaremos dentro de MariaDB. Para ello entraremos en MariaDB
+
+```bash
+sudo mariadb
+```
+
+2. Con los siguientes comandos se crearan la base de datos y el usuario para acceder (al igual que una contraseña)
+
+```bash
+CREATE DATABASE wordpress;
+CREATE USER 'wp_user'@'localhost' IDENTIFIED BY 'Ejemplo_contraseña';
+GRANT ALL ON wordpress.* TO 'wp_user'@'localhost';
+```
+
+#En la primera foto salta error pero porque he puesto el segundo comando otra vez, pero al ejecutarlo por primera vez no ha dado error. El resto solo los he ejecutado una única vez 
+
+<img width="659" height="366" alt="image" src="https://github.com/user-attachments/assets/e9739f24-983e-4bd3-abfb-9cdfa47a2567" />
+
+3. Entraremos para ver que funciona
+
+```bash
+mariadb -u wp_user -p wordpress
+```
+
+<img width="688" height="242" alt="image" src="https://github.com/user-attachments/assets/34ef1b9d-3fda-429c-ba51-6432a38257f5" />
+
+
+
 
 
