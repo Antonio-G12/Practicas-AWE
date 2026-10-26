@@ -120,5 +120,17 @@ rm -r /tmp/wordpress /tmp/latest.tar.gz
 ls /var/www/html
 ```
 
+3. (Pregunta 4): Los primeros comandos sirven para, en el caso del primero de estos, instalar wget (ya instalado en mi caso), el siguiente para moverse a /tmp, el otro para conseguir el archivo comprimido de la pagina de WordPress y los ultimos de estos para descomprimir y ver el contenido de la carpeta. Los siguientes tanto para borrar como para mcopiar
 
+4. Le damos los siguientes permisos
 
+```bash
+sudo chown -R www-data:www-data /var/www/html
+sudo find /var/www/html -type d -exec chmod 755 {} \;
+sudo find /var/www/html -type f -exec chmod 644 {} \;
+ls -ld /var/www/html
+```
+
+<img width="669" height="404" alt="image" src="https://github.com/user-attachments/assets/cc2c0383-56e0-4085-b014-207993cf21c3" />
+
+5. (Pregunta 5): 
