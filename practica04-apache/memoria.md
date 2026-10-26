@@ -77,6 +77,7 @@ sudo mariadb
 ```
 
 2. Con los siguientes comandos se crearan la base de datos y el usuario para acceder (al igual que una contraseña)
+#El primero lo que hará es crear la base de datos, luego el segundo la llave de acceso por así decirlo y el tercero le otorga permisos a esa misma llave
 
 ```bash
 CREATE DATABASE wordpress;
@@ -96,7 +97,28 @@ mariadb -u wp_user -p wordpress
 
 <img width="688" height="242" alt="image" src="https://github.com/user-attachments/assets/34ef1b9d-3fda-429c-ba51-6432a38257f5" />
 
+4. (Pregunta 3): Por evitar ataques y problemas de seguridad
 
+**Apartado 4**
+
+1. Instalamos WordPress dentro de la carpeta /tmp.
+
+```bash
+sudo apt install wget -y
+cd /tmp
+wget https://wordpress.org/latest.tar.gz
+tar -xzf latest.tar.gz
+ls wordpress
+```
+
+2. Luego movemos el contenido a la carpeta del sitio web.
+
+```bash
+sudo rm /var/www/html/index.html
+sudo cp -a /tmp/wordpress/. /var/www/html/
+rm -r /tmp/wordpress /tmp/latest.tar.gz
+ls /var/www/html
+```
 
 
 
