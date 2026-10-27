@@ -144,3 +144,49 @@ ls -ld /var/www/html
 <img width="764" height="801" alt="image" src="https://github.com/user-attachments/assets/744c0272-8637-4eae-bbf1-a85d727b44ab" />
 
 <img width="840" height="791" alt="image" src="https://github.com/user-attachments/assets/0c7aa158-2e46-4b78-9975-2394dcb81b9a" />
+
+2. (Pregunta 6): La parte de instalación en terminal mediante los comandos del anterior apartado y en el navegador ya la parte más grafica (configuración de idioma, del sitio web y del usuario). Porque en el servidor no hace falta ejecutar un programa como tal ya que va por comandos (aparte de que sin interfaz gráfica consume menos recursos)
+
+**Apartado 6**
+
+1. Abrimos el sitio web otra vez para ver el titulo y para entrar en Wordpress al panel de admin con: "http://IP_Servidor/wp-admin/"
+
+2. Publicaremos una entrada y comprobaremos el resultado. Luego para ver la entrada guardada en terminal se hara con lo siguiente:
+
+```bash
+sudo mariadb wordpress -e "SHOW TABLES;"
+```
+
+<img width="859" height="613" alt="image" src="https://github.com/user-attachments/assets/22775f31-0c4f-4ed2-b5c8-b46260913409" />
+
+<img width="555" height="345" alt="image" src="https://github.com/user-attachments/assets/8c80755f-9be3-4f79-bc5f-dcc1c3dc93c3" />
+
+3. (Pregunta 7): En base de datos (en especifico la de WordPress de MariaDB). Con el comando anterior
+
+**Apartado 7** 
+
+1. Editaremos la configuración con lo siguiente
+
+```bash
+sudo nano /var/www/html/wp-config.php
+```
+
+Y modificaremos estas lineas del archivo: 
+
+```bash
+define( 'WP_HOME',    'http://' . $_SERVER['HTTP_HOST'] );
+define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] );
+```
+
+2. Lo guardaremos y comprobaremos con:
+```bash
+php -l /var/www/html/wp-config.php
+```
+para ver que no hayan errores de sintaxis. Ahora la pagina causara un error404 al entrar. Esto se soluciona en el siguiente apartado
+
+
+**Apartado 8**
+
+
+
+
