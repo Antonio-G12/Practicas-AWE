@@ -179,14 +179,20 @@ define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] );
 ```
 
 2. Lo guardaremos y comprobaremos con:
+
 ```bash
-php -l /var/www/html/wp-config.php
+php -l /var/www/html/wordpress/wp-config.php
 ```
+
 para ver que no hayan errores de sintaxis. Ahora la pagina causara un error404 al entrar. Esto se soluciona en el siguiente apartado
+
+<img width="678" height="150" alt="image" src="https://github.com/user-attachments/assets/bd0c01ba-2de8-4fc1-a5c4-4ca5f6b56e9a" />
+
+<img width="590" height="47" alt="image" src="https://github.com/user-attachments/assets/b9507efd-3460-40c5-a671-ca3b7f158ab8" />
 
 
 **Apartado 8**
 
-
+1.
 
 
