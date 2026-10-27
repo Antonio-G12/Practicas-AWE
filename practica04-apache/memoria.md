@@ -193,6 +193,66 @@ para ver que no hayan errores de sintaxis. Ahora la pagina causara un error404 a
 
 **Apartado 8**
 
-1.
+1. Permitimos a Apache que lea el siguiente fichero:
+```bash
+
+sudo nano /etc/apache2/conf-available/wordpress.conf
+
+<Directory /var/www/html/wordpress>
+    AllowOverride All
+</Directory>
+```
+
+2. Activamos los siguientes modulos
+```bash
+sudo a2enmod rewrite
+sudo a2enconf wordpress
+sudo apache2ctl configtest
+sudo systemctl restart apache2
+```
+
+3. Comprobamos que se ha creado el fichero .htaccess
+
+```bash
+ls -la /var/www/html/.htaccess
+```
+
+4. Modificamos el tamaño máximo de los archivos que se puedan subir
+```bash
+printf 'upload_max_filesize = 64M\npost_max_size = 64M\n' | sudo tee /etc/php/8.3/apache2/conf.d/99-wordpress.ini
+sudo systemctl restart apache2
+```
+
+<img width="811" height="773" alt="image" src="https://github.com/user-attachments/assets/1c7467d6-7ee6-490f-b350-903c5c553400" />
+
+<img width="869" height="88" alt="image" src="https://github.com/user-attachments/assets/e8e924ef-63f6-4f11-bbb6-c582bba64739" />
+
+5. (Pregunta 7):
+
+**Apartado 9**
+
+1. Comprobamos que ocurre cuando MariaDB se para (esto causara que la web deje de funcionar al perder la conexion con la base de datos)
+
+```bash
+sudo systemctl stop mariadb
+```
+
+2. Lo volvemos a activar
+```bash
+sudo systemctl start mariadb
+systemctl is-active mariadb
+```
 
 
+3. (Pregunta 8):
+
+
+**Apartado 10**
+
+1. Comprobamos que todo este en orden:
+```bash
+systemctl is-active apache2 mariadb
+php -v
+ls /etc/apache2/sites-enabled/
+sudo mariadb wordpress -e "SHOW TABLES;"
+```
