@@ -136,3 +136,11 @@ ls -ld /var/www/html
 5. (Pregunta 5): Estos comandos lo que hacen es dar permisos (en el caso del chown -R, el find lo hace igual solo que busca en el directorio los archivos concretos para darle permiso (el -exec es para ejecutar el comando sin confirmacion). Porque WordPress no podrá ni crear ni modificar archivos, únicamente podrá leerlos. Puede fallar las actualizaciones y causar errores al subir archivos
 
 **Apartado 5**
+
+1. Ahora procedemos a la instalación de WordPress en el sitio web (que se accede con http://IP_Servidor) accediendo a su carpeta desde el indice de la web (las siguientes capturas muestran los pasos mas importantes)
+
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/bc51f72f-2b07-4807-8619-9ba641e531bd" />
+
+<img width="764" height="801" alt="image" src="https://github.com/user-attachments/assets/744c0272-8637-4eae-bbf1-a85d727b44ab" />
+
+<img width="840" height="791" alt="image" src="https://github.com/user-attachments/assets/0c7aa158-2e46-4b78-9975-2394dcb81b9a" />
