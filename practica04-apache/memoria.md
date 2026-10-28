@@ -227,7 +227,7 @@ sudo systemctl restart apache2
 
 <img width="869" height="88" alt="image" src="https://github.com/user-attachments/assets/e8e924ef-63f6-4f11-bbb6-c582bba64739" />
 
-5. (Pregunta 7):
+5. (Pregunta 7): Porque esas direcciones se guardan en ese fichero
 
 **Apartado 9**
 
@@ -242,9 +242,12 @@ sudo systemctl stop mariadb
 sudo systemctl start mariadb
 systemctl is-active mariadb
 ```
+<img width="857" height="870" alt="imatge" src="https://github.com/user-attachments/assets/feb158e8-9b74-413f-adb7-dcfe6cad3fc6" />
+
+<img width="843" height="806" alt="imatge" src="https://github.com/user-attachments/assets/18d6c8fa-50a3-4d65-ab24-cccf6c162e5a" />
 
 
-3. (Pregunta 8):
+3. (Pregunta 8): Comprobaría si MariaDB esta activo y luego de que Apache no diera errores
 
 
 **Apartado 10**
@@ -256,3 +259,11 @@ php -v
 ls /etc/apache2/sites-enabled/
 sudo mariadb wordpress -e "SHOW TABLES;"
 ```
+
+| Programa / SO        | Estado                                                                       |
+|----------------------|------------------------------------------------------------------------------|
+| Ubuntu Server 24.04  | Funcionando sin problemas                                                    |
+| Apache2              | Funcionando sin errores                                                      |
+| MariaDB (10.11)      | Funcionando con base wordpress                                               |
+| PHP (8.3)            | Activo                                                                       |
+| Wordpress            | Funciona y se puede acceder (en mi caso lo tengo en /var/www/html/wordpress) |
